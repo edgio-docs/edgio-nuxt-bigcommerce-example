@@ -5,7 +5,7 @@ module.exports = {
   mode: 'production',
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist', '_layer0'), // should match server.path in layer0.config.js
+    path: path.resolve(__dirname, 'dist', '_edgio'), // should match server.path in edgio.config.js
     libraryTarget: 'umd',
     libraryExport: 'default'
   },

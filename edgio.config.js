@@ -1,14 +1,14 @@
 'use strict';
 
-// This file was automatically added by layer0 deploy.
+// This file was automatically added by edgio deploy.
 // You should commit this file to source control.
 
 module.exports = {
   backends: {},
   includeNodeModules: true,
-  connector: '@layer0/nuxt',
+  connector: '@edgio/nuxt',
   server: {
-    path: './dist/_layer0/server.js'
+    path: './dist/_edgio/server.js'
   },
   includeFiles: {
     'config/**': true,

@@ -1,8 +1,8 @@
-// This file was added by layer0 init.
+// This file was added by edgio init.
 // You should commit this file to source control.
 
-const { Router } = require('@layer0/core/router');
-const { nuxtRoutes } = require('@layer0/nuxt');
+const { Router } = require('@edgio/core/router');
+const { nuxtRoutes } = require('@edgio/nuxt');
 
 const CACHE_TTL_1H = 3600;
 const CACHE_TTL_12H = CACHE_TTL_1H * 12;
@@ -34,7 +34,7 @@ const pageCacheHandler = ({ cache }) => {
 
 const router = new Router();
 
-// layer0 service-worker
+// edgio service-worker
 router.match('/service-worker.js', ({ serviceWorker }) => {
   serviceWorker('.nuxt/dist/client/service-worker.js');
 });
